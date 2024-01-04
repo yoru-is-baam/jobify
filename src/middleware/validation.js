@@ -1,5 +1,9 @@
 import { validationResult } from "express-validator";
-import { BadRequestError, NotFoundError } from "../errors/custom-error.js";
+import {
+	BadRequestError,
+	NotFoundError,
+	UnauthorizedError,
+} from "../errors/custom-errors.js";
 
 const withValidationErrors = (validateValues) => {
 	return [
@@ -11,6 +15,9 @@ const withValidationErrors = (validateValues) => {
 
 				if (errorMessages[0].startsWith("no job")) {
 					throw new NotFoundError(errorMessages);
+				}
+				if (errorMessages[0].startsWith("not authorized")) {
+					throw new UnauthorizedError("not authorized to access this route");
 				}
 
 				throw new BadRequestError(errorMessages);

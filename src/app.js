@@ -11,6 +11,7 @@ import route from "./routes/index.js";
 
 // packages
 import morgan from "morgan";
+import cookieParser from "cookie-parser";
 
 // error handler
 import notFoundMiddleware from "./middleware/not-found.js";
@@ -19,6 +20,7 @@ import errorHandlerMiddleware from "./middleware/error-handler.js";
 if (process.env.NODE_ENV === "development") {
 	app.use(morgan("dev"));
 }
+app.use(cookieParser());
 app.use(express.json());
 
 app.use("/api", route);
