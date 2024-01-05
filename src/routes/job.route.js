@@ -9,6 +9,7 @@ router
 	.route("/")
 	.get(JobController.getAllJobs)
 	.post(JobValidation.validateJobInput, JobController.createJob);
+router.route("/stats").get(JobController.showStats);
 router
 	.route("/:id")
 	.get(validateIdParam, JobController.getJob)

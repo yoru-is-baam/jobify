@@ -3,8 +3,14 @@ import bcrypt from "bcryptjs";
 
 const UserSchema = new mongoose.Schema({
 	name: String,
-	email: String,
-	password: String,
+	email: {
+		type: String,
+		unique: true,
+	},
+	password: {
+		type: String,
+		select: false,
+	},
 	lastName: {
 		type: String,
 		default: "lastName",
@@ -13,12 +19,13 @@ const UserSchema = new mongoose.Schema({
 		type: String,
 		default: "my city",
 	},
-	role: {
-		type: String,
-		enum: ["user", "admin"],
-		default: "user",
-	},
 });
+
+UserSchema.methods.toJSON = function () {
+	const obj = this.toObject();
+	delete obj.password;
+	return obj;
+};
 
 UserSchema.pre("save", async function (next) {
 	if (!this.isModified("password")) return;

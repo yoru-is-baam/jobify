@@ -1,11 +1,11 @@
-import mongoose from "mongoose";
 import app from "./app.js";
+import connectDB from "./db/connect.js";
 
 const port = process.env.PORT || 5100;
 
 const startServer = async () => {
 	try {
-		await mongoose.connect(process.env.MONGO_URL);
+		await connectDB(process.env.MONGO_URL);
 		app.listen(port, () =>
 			console.log(`Server is listening on port ${port}...`)
 		);
