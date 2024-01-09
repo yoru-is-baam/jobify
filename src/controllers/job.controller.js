@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import { Job } from "../models/index.js";
 import { StatusCodes } from "http-status-codes";
+import dayjs from "dayjs";
 
 const getAllJobs = async (req, res) => {
 	// const filter =
@@ -44,8 +45,52 @@ const deleteJob = async (req, res) => {
 const showStats = async (req, res) => {
 	let stats = await Job.aggregate([
 		{ $match: { createdBy: new mongoose.Types.ObjectId(req.user.userId) } },
+		{ $group: { _id: "$jobStatus", count: { $sum: 1 } } },
 	]);
-	res.status(StatusCodes.OK).json({ status: "success", data: { stats } });
+
+	stats = stats.reduce((accumulator, currentValue) => {
+		const { _id: title, count } = currentValue;
+		accumulator[title] = count;
+		return accumulator;
+	}, {});
+
+	const defaultStats = {
+		pending: stats.pending || 0,
+		interview: stats.interview || 0,
+		declined: stats.declined || 0,
+	};
+
+	let monthlyApplications = await Job.aggregate([
+		{ $match: { createdBy: new mongoose.Types.ObjectId(req.user.userId) } },
+		{
+			$group: {
+				_id: { year: { $year: "$createdAt" }, month: { $month: "$createdAt" } },
+				count: { $sum: 1 },
+			},
+		},
+		{ $sort: { "_id.year": -1, "_id.month": -1 } },
+		{ $limit: 6 },
+	]);
+
+	monthlyApplications = monthlyApplications
+		.map((item) => {
+			const {
+				_id: { year, month },
+				count,
+			} = item;
+
+			const date = dayjs()
+				.month(month - 1)
+				.year(year)
+				.format("MMM YYYY");
+
+			return { date, count };
+		})
+		.reverse();
+
+	res
+		.status(StatusCodes.OK)
+		.json({ status: "success", data: { defaultStats, monthlyApplications } });
 };
 
 export default {
