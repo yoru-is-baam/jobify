@@ -1,3 +1,5 @@
+# Jobify API
+
 ## Install and setup
 
 ### Install dependencies
@@ -16,4 +18,10 @@ yarn dev
 
 ```sh
 yarn start
+```
+
+### Run populate.js to insert data
+
+```sh
+node ./src/populate.js
 ```
