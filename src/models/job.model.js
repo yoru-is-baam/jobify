@@ -5,7 +5,7 @@ const JobSchema = new mongoose.Schema(
 	{
 		company: String,
 		position: String,
-		jobStatus: {
+		status: {
 			type: String,
 			enum: Object.values(JOB_STATUS),
 			default: JOB_STATUS.PENDING,

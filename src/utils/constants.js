@@ -10,8 +10,8 @@ export const JOB_TYPE = {
 	INTERNSHIP: "internship",
 };
 export const JOB_SORT_BY = {
-	NEWEST_FIRST: "newest",
-	OLDEST_FIRST: "oldest",
+	LATEST: "latest",
+	OLDEST: "oldest",
 	ASCENDING: "a-z",
 	DESCENDING: "z-a",
 };

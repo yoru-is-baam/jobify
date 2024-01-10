@@ -4,7 +4,7 @@
 		"position": "Software Test Engineer III",
 		"jobLocation": "Karangtengah",
 		"jobType": "full-time",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-01-06T12:17:11Z"
 	},
@@ -13,7 +13,7 @@
 		"position": "Staff Accountant II",
 		"jobLocation": "Gnosjö",
 		"jobType": "remote",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-08-11T04:52:58Z"
 	},
@@ -22,7 +22,7 @@
 		"position": "Nuclear Power Engineer",
 		"jobLocation": "Sulkava",
 		"jobType": "part-time",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-09-22T20:17:03Z"
 	},
@@ -31,7 +31,7 @@
 		"position": "Electrical Engineer",
 		"jobLocation": "København",
 		"jobType": "internship",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-11-29T01:32:17Z"
 	},
@@ -40,7 +40,7 @@
 		"position": "Developer IV",
 		"jobLocation": "Zheyuan",
 		"jobType": "internship",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-04-19T09:50:29Z"
 	},
@@ -49,7 +49,7 @@
 		"position": "Administrative Officer",
 		"jobLocation": "Pergamos",
 		"jobType": "part-time",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-01-10T09:00:17Z"
 	},
@@ -58,7 +58,7 @@
 		"position": "Human Resources Manager",
 		"jobLocation": "Pandangan Kulon",
 		"jobType": "remote",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-01-15T01:12:55Z"
 	},
@@ -67,7 +67,7 @@
 		"position": "Research Assistant IV",
 		"jobLocation": "Būrabay",
 		"jobType": "full-time",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-06-20T05:16:03Z"
 	},
@@ -76,7 +76,7 @@
 		"position": "Legal Assistant",
 		"jobLocation": "Rio Pardo",
 		"jobType": "part-time",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-03-05T09:15:30Z"
 	},
@@ -85,7 +85,7 @@
 		"position": "Senior Editor",
 		"jobLocation": "Giồng Riềng",
 		"jobType": "part-time",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-08-23T02:08:39Z"
 	},
@@ -94,7 +94,7 @@
 		"position": "Dental Hygienist",
 		"jobLocation": "Methven",
 		"jobType": "internship",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-10-23T03:37:19Z"
 	},
@@ -103,7 +103,7 @@
 		"position": "Product Engineer",
 		"jobLocation": "Liushutun",
 		"jobType": "internship",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-04-14T23:21:45Z"
 	},
@@ -112,7 +112,7 @@
 		"position": "Web Designer III",
 		"jobLocation": "San Miguel",
 		"jobType": "internship",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-11-30T16:02:13Z"
 	},
@@ -121,7 +121,7 @@
 		"position": "Project Manager",
 		"jobLocation": "Weton",
 		"jobType": "internship",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-01-31T02:39:30Z"
 	},
@@ -130,7 +130,7 @@
 		"position": "VP Sales",
 		"jobLocation": "Svyetlahorsk",
 		"jobType": "remote",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-01-07T18:04:05Z"
 	},
@@ -139,7 +139,7 @@
 		"position": "Community Outreach Specialist",
 		"jobLocation": "Svislach",
 		"jobType": "remote",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-09-24T05:03:18Z"
 	},
@@ -148,7 +148,7 @@
 		"position": "Accounting Assistant III",
 		"jobLocation": "Simitli",
 		"jobType": "remote",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-08-12T03:47:47Z"
 	},
@@ -157,7 +157,7 @@
 		"position": "Pharmacist",
 		"jobLocation": "Jakhaly",
 		"jobType": "internship",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-10-21T07:03:27Z"
 	},
@@ -166,7 +166,7 @@
 		"position": "Senior Financial Analyst",
 		"jobLocation": "Estoi",
 		"jobType": "part-time",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-12-26T13:14:04Z"
 	},
@@ -175,7 +175,7 @@
 		"position": "Dental Hygienist",
 		"jobLocation": "Rebrikha",
 		"jobType": "remote",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-11-23T06:27:19Z"
 	},
@@ -184,7 +184,7 @@
 		"position": "Clinical Specialist",
 		"jobLocation": "Tiancheng",
 		"jobType": "part-time",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-06-25T06:40:23Z"
 	},
@@ -193,7 +193,7 @@
 		"position": "Nuclear Power Engineer",
 		"jobLocation": "Si Bun Rueang",
 		"jobType": "remote",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-09-07T19:38:06Z"
 	},
@@ -202,7 +202,7 @@
 		"position": "Tax Accountant",
 		"jobLocation": "Chok Chai",
 		"jobType": "part-time",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-10-14T23:25:12Z"
 	},
@@ -211,7 +211,7 @@
 		"position": "Physical Therapy Assistant",
 		"jobLocation": "Paoua",
 		"jobType": "part-time",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-10-31T19:20:18Z"
 	},
@@ -220,7 +220,7 @@
 		"position": "Desktop Support Technician",
 		"jobLocation": "Kosai-shi",
 		"jobType": "remote",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-09-24T11:01:03Z"
 	},
@@ -229,7 +229,7 @@
 		"position": "Programmer Analyst I",
 		"jobLocation": "New Agutaya",
 		"jobType": "remote",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-08-19T18:23:46Z"
 	},
@@ -238,7 +238,7 @@
 		"position": "Software Consultant",
 		"jobLocation": "Belfast",
 		"jobType": "full-time",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-08-24T08:56:52Z"
 	},
@@ -247,7 +247,7 @@
 		"position": "Geologist IV",
 		"jobLocation": "Cerenti",
 		"jobType": "remote",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-03-09T08:41:18Z"
 	},
@@ -256,7 +256,7 @@
 		"position": "Tax Accountant",
 		"jobLocation": "An Lão",
 		"jobType": "part-time",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-11-29T04:38:32Z"
 	},
@@ -265,7 +265,7 @@
 		"position": "Marketing Assistant",
 		"jobLocation": "Guohe",
 		"jobType": "internship",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-11-28T02:07:37Z"
 	},
@@ -274,7 +274,7 @@
 		"position": "Automation Specialist II",
 		"jobLocation": "Kuznetsovs’k",
 		"jobType": "remote",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-06-20T11:21:38Z"
 	},
@@ -283,7 +283,7 @@
 		"position": "Sales Associate",
 		"jobLocation": "La Mesa",
 		"jobType": "internship",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-09-24T17:22:21Z"
 	},
@@ -292,7 +292,7 @@
 		"position": "Information Systems Manager",
 		"jobLocation": "Tshela",
 		"jobType": "full-time",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-02-24T22:56:42Z"
 	},
@@ -301,7 +301,7 @@
 		"position": "Programmer I",
 		"jobLocation": "Cartagena",
 		"jobType": "remote",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-06-20T03:03:36Z"
 	},
@@ -310,7 +310,7 @@
 		"position": "Payment Adjustment Coordinator",
 		"jobLocation": "Verkhozim",
 		"jobType": "internship",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-07-01T23:49:49Z"
 	},
@@ -319,7 +319,7 @@
 		"position": "Accounting Assistant III",
 		"jobLocation": "Kafr Mandā",
 		"jobType": "remote",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-12-22T11:20:44Z"
 	},
@@ -328,7 +328,7 @@
 		"position": "Quality Control Specialist",
 		"jobLocation": "Kosaya Gora",
 		"jobType": "full-time",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-12-26T20:23:21Z"
 	},
@@ -337,7 +337,7 @@
 		"position": "Chief Design Engineer",
 		"jobLocation": "Langley",
 		"jobType": "part-time",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-05-20T05:34:50Z"
 	},
@@ -346,7 +346,7 @@
 		"position": "Help Desk Operator",
 		"jobLocation": "Orsha",
 		"jobType": "full-time",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-12-21T03:23:00Z"
 	},
@@ -355,7 +355,7 @@
 		"position": "Assistant Professor",
 		"jobLocation": "Shizi",
 		"jobType": "full-time",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-10-05T17:37:24Z"
 	},
@@ -364,7 +364,7 @@
 		"position": "Automation Specialist I",
 		"jobLocation": "Utmānzai",
 		"jobType": "remote",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-08-05T06:53:47Z"
 	},
@@ -373,7 +373,7 @@
 		"position": "Chemical Engineer",
 		"jobLocation": "Sukosari",
 		"jobType": "remote",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-08-09T21:24:39Z"
 	},
@@ -382,7 +382,7 @@
 		"position": "Clinical Specialist",
 		"jobLocation": "Neiguan",
 		"jobType": "full-time",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-06-18T08:15:10Z"
 	},
@@ -391,7 +391,7 @@
 		"position": "Research Nurse",
 		"jobLocation": "Tilburg",
 		"jobType": "part-time",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-10-15T20:09:06Z"
 	},
@@ -400,7 +400,7 @@
 		"position": "Librarian",
 		"jobLocation": "Lévis",
 		"jobType": "internship",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-05-29T04:55:22Z"
 	},
@@ -409,7 +409,7 @@
 		"position": "Account Representative II",
 		"jobLocation": "Paripiranga",
 		"jobType": "remote",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-08-14T09:32:28Z"
 	},
@@ -418,7 +418,7 @@
 		"position": "Biostatistician IV",
 		"jobLocation": "Dingzhai",
 		"jobType": "full-time",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-09-15T06:43:57Z"
 	},
@@ -427,7 +427,7 @@
 		"position": "Cost Accountant",
 		"jobLocation": "Severnyy",
 		"jobType": "remote",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-10-20T19:59:44Z"
 	},
@@ -436,7 +436,7 @@
 		"position": "Engineer IV",
 		"jobLocation": "Pétionville",
 		"jobType": "internship",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-06-22T12:27:14Z"
 	},
@@ -445,7 +445,7 @@
 		"position": "Database Administrator II",
 		"jobLocation": "San Agustin",
 		"jobType": "full-time",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-05-05T01:43:43Z"
 	},
@@ -454,7 +454,7 @@
 		"position": "Software Test Engineer IV",
 		"jobLocation": "Isulan",
 		"jobType": "remote",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-12-03T09:15:40Z"
 	},
@@ -463,7 +463,7 @@
 		"position": "Civil Engineer",
 		"jobLocation": "Kiamba",
 		"jobType": "internship",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-12-27T03:20:35Z"
 	},
@@ -472,7 +472,7 @@
 		"position": "Graphic Designer",
 		"jobLocation": "Baihua",
 		"jobType": "internship",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-11-22T08:24:08Z"
 	},
@@ -481,7 +481,7 @@
 		"position": "Internal Auditor",
 		"jobLocation": "Princeton",
 		"jobType": "part-time",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-02-01T05:24:13Z"
 	},
@@ -490,7 +490,7 @@
 		"position": "Web Designer IV",
 		"jobLocation": "Liutan",
 		"jobType": "remote",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-08-05T15:12:41Z"
 	},
@@ -499,7 +499,7 @@
 		"position": "Human Resources Manager",
 		"jobLocation": "Fengmen",
 		"jobType": "part-time",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-11-03T23:31:16Z"
 	},
@@ -508,7 +508,7 @@
 		"position": "Chief Design Engineer",
 		"jobLocation": "Fulong",
 		"jobType": "remote",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-06-29T07:04:40Z"
 	},
@@ -517,7 +517,7 @@
 		"position": "Assistant Professor",
 		"jobLocation": "Kebonsari Kidul",
 		"jobType": "full-time",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-05-01T11:04:20Z"
 	},
@@ -526,7 +526,7 @@
 		"position": "Senior Sales Associate",
 		"jobLocation": "Dmitriyevka",
 		"jobType": "full-time",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-02-29T06:16:40Z"
 	},
@@ -535,7 +535,7 @@
 		"position": "Data Coordiator",
 		"jobLocation": "Néa Kíos",
 		"jobType": "part-time",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-04-03T14:02:29Z"
 	},
@@ -544,7 +544,7 @@
 		"position": "Executive Secretary",
 		"jobLocation": "Piracuruca",
 		"jobType": "full-time",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-08-18T13:07:09Z"
 	},
@@ -553,7 +553,7 @@
 		"position": "Environmental Tech",
 		"jobLocation": "Meixian",
 		"jobType": "full-time",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-12-10T00:41:19Z"
 	},
@@ -562,7 +562,7 @@
 		"position": "Assistant Media Planner",
 		"jobLocation": "San Ramón de la Nueva Orán",
 		"jobType": "full-time",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-01-02T14:35:26Z"
 	},
@@ -571,7 +571,7 @@
 		"position": "Staff Scientist",
 		"jobLocation": "Puntaru",
 		"jobType": "internship",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-09-14T23:56:30Z"
 	},
@@ -580,7 +580,7 @@
 		"position": "Programmer Analyst I",
 		"jobLocation": "Shanghu",
 		"jobType": "internship",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-05-03T05:37:59Z"
 	},
@@ -589,7 +589,7 @@
 		"position": "Safety Technician III",
 		"jobLocation": "Jingmen",
 		"jobType": "part-time",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-04-09T13:05:35Z"
 	},
@@ -598,7 +598,7 @@
 		"position": "Civil Engineer",
 		"jobLocation": "Arrah",
 		"jobType": "remote",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-07-25T22:53:24Z"
 	},
@@ -607,7 +607,7 @@
 		"position": "Programmer II",
 		"jobLocation": "Lidköping",
 		"jobType": "full-time",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-06-10T07:35:43Z"
 	},
@@ -616,7 +616,7 @@
 		"position": "Account Executive",
 		"jobLocation": "Kota Kinabalu",
 		"jobType": "full-time",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-12-07T20:53:45Z"
 	},
@@ -625,7 +625,7 @@
 		"position": "Associate Professor",
 		"jobLocation": "Hewan",
 		"jobType": "full-time",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-07-24T07:35:08Z"
 	},
@@ -634,7 +634,7 @@
 		"position": "Staff Scientist",
 		"jobLocation": "Wadusari",
 		"jobType": "full-time",
-		"jobStatus": "declined",
+		"status": "declined",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2020-04-01T09:32:34Z"
 	},
@@ -643,7 +643,7 @@
 		"position": "Help Desk Operator",
 		"jobLocation": "As Suwaydā",
 		"jobType": "part-time",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-05-18T19:10:23Z"
 	},
@@ -652,7 +652,7 @@
 		"position": "Actuary",
 		"jobLocation": "Dianfang",
 		"jobType": "full-time",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-12-08T18:33:34Z"
 	},
@@ -661,7 +661,7 @@
 		"position": "Developer III",
 		"jobLocation": "Liuhe",
 		"jobType": "remote",
-		"jobStatus": "pending",
+		"status": "pending",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-06-05T00:16:36Z"
 	},
@@ -670,7 +670,7 @@
 		"position": "Systems Administrator II",
 		"jobLocation": "Levashi",
 		"jobType": "full-time",
-		"jobStatus": "interview",
+		"status": "interview",
 		"createdBy": "65980259774b7455743ce8d7",
 		"createdAt": "2021-05-07T06:49:04Z"
 	}

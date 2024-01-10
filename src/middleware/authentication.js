@@ -10,7 +10,8 @@ export const authenticateUser = (req, res, next) => {
 
 	try {
 		const { userId } = verifyJWT(accessToken);
-		req.user = { userId };
+		const testUser = userId === "659d62798a93f8f1a41911df";
+		req.user = { userId, testUser };
 		next();
 	} catch (error) {
 		throw new UnauthenticatedError("authentication invalid");
