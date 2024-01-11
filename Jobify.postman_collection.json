@@ -1,0 +1,343 @@
+{
+	"info": {
+		"_postman_id": "a3fb4680-7296-4d38-b4ca-54b43876648e",
+		"name": "Jobify",
+		"description": "A robust platform for managing user profiles and job-related operations. This API provides comprehensive functionalities for users to create, read, update, and delete (CRUD) various resources. From managing profiles to authenticating users, **Jobify** streamlines the process of job-related interactions.\n\n###### {{URL}} = YOUR-HOST-SERVER-DOMAIN (Please update this variable to reflect your server's domain)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20550508"
+	},
+	"item": [
+		{
+			"name": "Job",
+			"item": [
+				{
+					"name": "Get All Jobs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/jobs?status&jobType&search&sort&page&limit",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"jobs"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": null,
+									"description": "all, pending, interview, declined"
+								},
+								{
+									"key": "jobType",
+									"value": null,
+									"description": "all, full-time, part-time, remote, internship"
+								},
+								{
+									"key": "search",
+									"value": null,
+									"description": "any value (matching with position)"
+								},
+								{
+									"key": "sort",
+									"value": null,
+									"description": "latest, oldest, a-z, z-a (matching with position)"
+								},
+								{
+									"key": "page",
+									"value": null,
+									"description": "any number"
+								},
+								{
+									"key": "limit",
+									"value": null,
+									"description": "any number"
+								}
+							]
+						},
+						"description": "Users can get specific jobs with pagination and sort"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Job",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"company\": \"apple\",\r\n    \"position\": \"backend\",\r\n    \"jobStatus\": \"pending\",\r\n    \"jobType\": \"full-time\",\r\n    \"jobLocation\": \"florida\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/jobs",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"jobs"
+							]
+						},
+						"description": "User can create their own jobs.\n\n**Note: Test User. Read Only!**"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Job",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/jobs/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"jobs",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "Job ID"
+								}
+							]
+						},
+						"description": "User can only get their own jobs.\n\n**Note: Test User. Read Only!**"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Job",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/jobs/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"jobs",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "Job ID"
+								}
+							]
+						},
+						"description": "User can only delete their own jobs.  \n**Note: Test User. Read Only!**"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Job",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"company\": \"apple\",\r\n    \"position\": \"backend\",\r\n    \"jobStatus\": \"pending\",\r\n    \"jobType\": \"full-time\",\r\n    \"jobLocation\": \"florida\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/jobs/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"jobs",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "Job ID"
+								}
+							]
+						},
+						"description": "User can only update their own jobs.\n\n**Note: Test User. Read Only!**"
+					},
+					"response": []
+				},
+				{
+					"name": "Show Stats",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/jobs/stats",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"jobs",
+								"stats"
+							]
+						},
+						"description": "This endpoint shows each user's total number of pending/interview/declined jobs with monthly applications (latest 6 months)"
+					},
+					"response": []
+				}
+			],
+			"description": "This folder contains the API that allows users to perform various operations on job listings."
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/users/profile",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"profile"
+							]
+						},
+						"description": "User can get their profile."
+					},
+					"response": []
+				},
+				{
+					"name": "Update Profile",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"john\",\r\n    \"email\": \"john@gmail.com\",\r\n    \"lastName\": \"smith\",\r\n    \"location\": \"florida\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/users/profile",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"profile"
+							]
+						},
+						"description": "User can update their profile.\n\n**Note: Test User. Read Only!**"
+					},
+					"response": []
+				}
+			],
+			"description": "This folder contains the API that allows users to perform some operations on their profile."
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "// {\r\n//     \"email\": \"testUser@test.com\",\r\n//     \"password\": \"secret123\"\r\n// }\r\n{\r\n    \"email\": \"peter@gmail.com\",\r\n    \"password\": \"secret123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/auth/login",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						},
+						"description": "User can use email and password to log in."
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"test user\",\r\n    \"email\": \"testUser@test.com\",\r\n    \"password\": \"secret123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/auth/register",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						},
+						"description": "User can use name, email and password to register."
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/auth/logout",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth",
+								"logout"
+							]
+						},
+						"description": "User can log out of the API."
+					},
+					"response": []
+				}
+			],
+			"description": "This folder contains the API that allows users to perform some operations related to authentication."
+		}
+	]
+}

@@ -13,7 +13,7 @@ router
 router.route("/stats").get(JobController.showStats);
 router
 	.route("/:id")
-	.get(validateIdParam, JobController.getJob)
+	.get(testUser, validateIdParam, JobController.getJob)
 	.delete(testUser, validateIdParam, JobController.deleteJob)
 	.patch(
 		testUser,
