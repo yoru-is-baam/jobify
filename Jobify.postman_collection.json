@@ -67,7 +67,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"company\": \"apple\",\r\n    \"position\": \"backend\",\r\n    \"jobStatus\": \"pending\",\r\n    \"jobType\": \"full-time\",\r\n    \"jobLocation\": \"florida\"\r\n}",
+							"raw": "{\r\n    \"company\": \"apple\",\r\n    \"position\": \"backend\",\r\n    \"status\": \"pending\",\r\n    \"jobType\": \"full-time\",\r\n    \"jobLocation\": \"florida\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -155,7 +155,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"company\": \"apple\",\r\n    \"position\": \"backend\",\r\n    \"jobStatus\": \"pending\",\r\n    \"jobType\": \"full-time\",\r\n    \"jobLocation\": \"florida\"\r\n}",
+							"raw": "{\r\n    \"company\": \"apple\",\r\n    \"position\": \"backend\",\r\n    \"status\": \"pending\",\r\n    \"jobType\": \"full-time\",\r\n    \"jobLocation\": \"florida\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"

@@ -11,7 +11,7 @@ import { Job } from "../models/index.js";
 export const validateIdParam = withValidationErrors([
 	param("id").custom(async (value, { req }) => {
 		const isValidId = mongoose.Types.ObjectId.isValid(value);
-		if (!isValidId) throw new BadRequestError("invalid MongoDB id");
+		if (!isValidId) throw new BadRequestError("invalid id");
 
 		const job = await Job.findById(value);
 		if (!job) throw new NotFoundError(`no job with id ${value}`);

@@ -1,0 +1,395 @@
+openapi: 3.0.3
+info:
+  title: Jobify - The Job Management API
+  description: |-
+    A robust platform for managing user profiles and job-related operations. 
+
+    This API provides comprehensive functionalities for users to create, read, update, and delete (CRUD) various resources. From managing profiles to authenticating users, **Jobify** streamlines the process of job-related interactions.
+
+    Some useful links:
+    - [The Jobify repository](https://github.com/yoru-is-baam/jobify.git)
+    - [The source API definition for the Jobify](https://github.com/yoru-is-baam/jobify/blob/main/jobify-swagger.yaml)
+  termsOfService: http://swagger.io/terms/
+  contact:
+    email: hoanghuynhtuankiet69@gmail.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.11
+externalDocs:
+  description: Find out more about Swagger
+  url: http://swagger.io
+servers:
+  - url: http://localhost:5100/api/v1
+tags:
+  - name: job
+    description: Everything about your Jobs
+    externalDocs:
+      description: Find out more
+      url: http://swagger.io
+  - name: user
+    description: Operations about user
+    externalDocs:
+      description: Find out more about our store
+      url: http://swagger.io
+  - name: auth
+    description: Operations about authentication
+paths:
+  /jobs:
+    get:
+      tags:
+        - job
+      summary: Get all jobs
+      # security:
+      #   - jwtCookieAuth: []
+      description: Get all jobs of the corresponding user
+      operationId: getAllJobs
+      parameters:
+        - name: status
+          in: query
+          description: Job status for filter
+          required: false
+          schema:
+            type: string
+            default: all
+            enum:
+              - all
+              - pending
+              - interview
+              - declined
+        - name: jobType
+          in: query
+          description: Job type for filter
+          required: false
+          schema:
+            type: string
+            default: all
+            enum:
+              - all
+              - full-time
+              - part-time
+              - remote
+              - internship
+        - name: search
+          in: query
+          description: Matching with position
+          required: false
+          schema:
+            type: string
+        - name: sort
+          in: query
+          description: Sort type using to sort all jobs
+          required: false
+          schema:
+            type: string
+            default: latest
+            enum:
+              - latest
+              - oldest
+              - a-z
+              - z-a
+        - name: page
+          in: query
+          description: Page number you want to view
+          required: false
+          schema:
+            type: number
+            default: 1
+        - name: limit
+          in: query
+          description: The number of jobs you want to view
+          required: false
+          schema:
+            type: number
+            default: 10
+      responses:
+        "200":
+          description: Return all jobs, total jobs, number of pages
+        "401":
+          description: Authentication invalid
+    post:
+      tags:
+        - job
+      summary: Create a job
+      # security:
+      #   - jwtCookieAuth: []
+      description: Create a job with information
+      operationId: createJob
+      requestBody:
+        $ref: "#/components/requestBodies/Job"
+      responses:
+        "201":
+          description: Return the created job
+        "400":
+          description: Test user error || Invalid input value
+        "401":
+          description: Authentication invalid
+  /jobs/{id}:
+    patch:
+      tags:
+        - job
+      summary: Update a job
+      # security:
+      #   - jwtCookieAuth: []
+      description: Update an existing job by Id
+      operationId: updateJob
+      parameters:
+        - $ref: "#/components/parameters/JobId"
+      requestBody:
+        $ref: "#/components/requestBodies/Job"
+      responses:
+        "200":
+          description: Job modified
+        "400":
+          description: Invalid job id || Test user error || Invalid input value
+        "401":
+          description: Authentication invalid
+        "403":
+          description: Not authorized to access this route
+        "404":
+          description: No job with the provided id
+    delete:
+      tags:
+        - job
+      summary: Delete a job
+      # security:
+      #   - jwtCookieAuth: []
+      description: Delete an existing job by Id
+      operationId: deleteJob
+      parameters:
+        - $ref: "#/components/parameters/JobId"
+      responses:
+        "200":
+          description: Job deleted
+        "400":
+          description: Invalid job id || Test user error
+        "401":
+          description: Authentication invalid
+        "403":
+          description: Not authorized to access this route
+        "404":
+          description: No job with the provided id
+    get:
+      tags:
+        - job
+      summary: Get a job
+      # security:
+      #   - jwtCookieAuth: []
+      description: Get an existing job by Id
+      operationId: getJob
+      parameters:
+        - $ref: "#/components/parameters/JobId"
+      responses:
+        "200":
+          description: Return job object
+        "400":
+          description: Invalid job id || Test user error
+        "401":
+          description: Authentication invalid
+        "403":
+          description: Not authorized to access this route
+        "404":
+          description: No job with the provided id
+  /jobs/stats:
+    get:
+      tags:
+        - job
+      summary: Get job stats
+      # security:
+      #   - jwtCookieAuth: []
+      description: Get each user's total number of pending/interview/declined jobs with monthly applications (latest 6 months)
+      operationId: getJobStats
+      responses:
+        "200":
+          description: Return job stats
+        "401":
+          description: Authentication invalid
+  /users/profile:
+    get:
+      tags:
+        - user
+      summary: Get user profile
+      # security:
+      #   - jwtCookieAuth: []
+      description: Get the user profile
+      operationId: getProfile
+      responses:
+        "200":
+          description: Return user profile
+          content:
+            application/json:
+              example:
+                status: success
+                data:
+                  user:
+                    _id: 65980262774b7455743ce8da,
+                    name: peter,
+                    email: peter@gmail.com,
+                    lastName: smith,
+                    location: my city,
+                    __v: 0
+        "401":
+          description: Authentication invalid
+    patch:
+      tags:
+        - user
+      summary: Update user profile
+      # security:
+      #   - jwtCookieAuth: []
+      description: Update the user profile
+      operationId: updateProfile
+      requestBody:
+        $ref: "#/components/requestBodies/User"
+      responses:
+        "200":
+          description: User updated
+        "400":
+          description: Test user error || Invalid input value
+        "401":
+          description: Authentication invalid
+  /auth/login:
+    post:
+      tags:
+        - auth
+      summary: Log in the Jobify
+      description: Log in with email and password
+      operationId: login
+      requestBody:
+        description: Email and password need to be used to log in
+        required: true
+        content:
+          application/json:
+            examples:
+              testUser:
+                value:
+                  email: testUser@test.com
+                  password: secret123
+              registeredUser:
+                value:
+                  email: peter@gmail.com
+                  password: secret123
+      responses:
+        "200":
+          description: User logged in
+        "400":
+          description: Invalid input value
+  /auth/register:
+    post:
+      tags:
+        - auth
+      summary: Register an account
+      description: Register with name, email and password
+      operationId: register
+      requestBody:
+        description: Name, email and password need to be used to register
+        required: true
+        content:
+          application/json:
+            example:
+              name: smith
+              email: willsmith@gmail.com
+              password: secret123
+      responses:
+        "201":
+          description: Return the registered user
+        "400":
+          description: Invalid input value
+  /auth/logout:
+    get:
+      tags:
+        - auth
+      summary: Log out the Jobify
+      description: Log out completely the Jobify
+      operationId: logout
+      responses:
+        "200":
+          description: User logged out
+components:
+  schemas:
+    User:
+      required:
+        - name
+        - email
+        - lastName
+        - location
+      type: object
+      properties:
+        name:
+          type: string
+          example: john
+        email:
+          type: string
+          example: john@gmail.com
+        lastName:
+          type: string
+          example: smith
+        location:
+          type: string
+          example: florida
+    Job:
+      required:
+        - company
+        - position
+        - status
+        - jobType
+        - jobLocation
+      type: object
+      properties:
+        company:
+          type: string
+          example: apple
+        position:
+          type: string
+          example: backend
+        status:
+          type: string
+          description: job status
+          enum:
+            - all
+            - pending
+            - interview
+            - declined
+          example: pending
+        jobType:
+          type: string
+          enum:
+            - all
+            - full-time
+            - part-time
+            - remote
+            - internship
+          example: full-time
+        jobLocation:
+          type: string
+          example: florida
+    ObjectId:
+      type: string
+      format: ObjectId
+  requestBodies:
+    Job:
+      description: Job object that needs to be used to update or create
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Job"
+    User:
+      description: User object that needs to be used to update
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/User"
+  parameters:
+    JobId:
+      name: id
+      in: path
+      description: ID of job to find
+      required: true
+      schema:
+        $ref: "#/components/schemas/ObjectId"
+  # securitySchemes:
+  #   jwtCookieAuth:
+  #     type: apiKey
+  #     in: cookie
+  #     name: accessToken

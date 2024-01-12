@@ -17,6 +17,11 @@ import cors from "cors";
 import mongoSanitize from "express-mongo-sanitize";
 import logger from "./configs/logger.js";
 
+// Swagger
+import swaggerUI from "swagger-ui-express";
+import YAML from "yamljs";
+const swaggerDocument = YAML.load("./swagger.yml");
+
 // error handler
 import notFoundMiddleware from "./middleware/not-found.js";
 import errorHandlerMiddleware from "./middleware/error-handler.js";
@@ -30,6 +35,10 @@ app.use(helmet());
 app.use(mongoSanitize());
 app.use(cors());
 
+app.get("/", (req, res) => {
+	res.send('<h1>Jobify API</h1><a href="/api-docs">Documentation</a>');
+});
+app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerDocument));
 app.use("/api", route);
 
 // log internal errors
