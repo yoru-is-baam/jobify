@@ -8,7 +8,7 @@ info:
 
     Some useful links:
     - [The Jobify repository](https://github.com/yoru-is-baam/jobify.git)
-    - [The source API definition for the Jobify](https://github.com/yoru-is-baam/jobify/blob/main/jobify-swagger.yaml)
+    - [The source API definition for the Jobify](https://github.com/yoru-is-baam/jobify/blob/main/swagger.yaml)
   termsOfService: http://swagger.io/terms/
   contact:
     email: hoanghuynhtuankiet69@gmail.com
@@ -20,7 +20,7 @@ externalDocs:
   description: Find out more about Swagger
   url: http://swagger.io
 servers:
-  - url: http://localhost:5100/api/v1
+  - url: https://jobs-api-r3sj-i3ys.onrender.com/api/v1
 tags:
   - name: job
     description: Everything about your Jobs
